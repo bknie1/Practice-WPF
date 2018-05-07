@@ -1,3 +1,4 @@
+
 # WPF and XAML Practice
 This is my study space for all things WPF .NET; from the basics to WPF with regards to the MVVC pattern.
 # Lecture Notes
@@ -436,3 +437,16 @@ We can still override initialization and shutdown sequences as long as we call s
 STA means UI elements have thread affinity. The thread that creates a UI element becomes the owner. Only the owner can interact with that element directly.
 
 All WPF UI elements are derived from the dispatcher object.
+
+It's best to leave long running threads in the background-thread rather than at the UI-thread level so we can continue using the application uninhibited.
+
+### Global Exceptions Handling
+
+#### Dispatcher.UnhandledException
+Exceptions for UI specific thread.
+#### Application.DispatcherUnhandledException
+Exceptions from the main thread.
+#### AppDomain.UnhandledException
+Exceptions from a domain.
+#### TaskScheduler.OnobservedTaskException
+Exceptions from tasks.
