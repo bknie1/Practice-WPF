@@ -2,15 +2,15 @@
 This is my study space for all things WPF .NET; from the basics to WPF with regards to the MVVC pattern.
 # Lecture Notes
 ## Table of Contents
- 1. [Introduction](#Introduction)
- 2. [Controls](#Controls)
+ 1. [Introduction](#introduction)
+ 2. [Controls](#controls)
  3. [Layout](#Layout)
- 4. [Properties and Events](#PropertiesandEvents)
- 5. [Data Binding](#DataBinding)
- 6. [Resources](#Resources)
- 7. [Styles, Triggers, Templates, Skins](#StylesTriggersTemplatesSkins)
- 8. [User Controls and Custom Controls](#UserControlsandCustomControls)
- 9. [WPF Application Model](#WPFApplicationModel)
+ 4. [Properties and Events](#properties-and-events)
+ 5. [Data Binding](#data-binding)
+ 6. [Resources](#resources)
+ 7. [Styles, Triggers, Templates, Skins](#styles-triggers-templates-skins)
+ 8. [User Controls and Custom Controls](#user-controls-and-custom-controls)
+ 9. [WPF Application Model](#wpf-application-model)
 
 ## Introduction
 ### Why WPF?
