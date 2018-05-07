@@ -1,8 +1,16 @@
 # WPF and XAML Practice
-
-Hi Orien and friends. I wanted to quickly leave you with some of my thoughts on this project as it's important, in the interview process, for you to understand how I approach problems.
-
+This is my study space for all things WPF .NET; from the basics to WPF with regards to the MVVC pattern.
 # Lecture Notes
+## Table of Contents
+ 1. [Introduction](#Introduction)
+ 2. [Controls](#Controls)
+ 3. [Layout](#Layout)
+ 4. [Properties and Events](#PropertiesandEvents)
+ 5. [Data Binding](#DataBinding)
+ 6. [Resources](#Resources)
+ 7. [Styles, Triggers, Templates, Skins](#StylesTriggersTemplatesSkins)
+ 8. [User Controls and Custom Controls](#UserControlsandCustomControls)
+ 9. [WPF Application Model](#WPFApplicationModel)
 
 ## Introduction
 ### Why WPF?
@@ -128,3 +136,73 @@ UWP is cross-platform in the Windows ecosystem. WPF is Windows only. However, kn
  - Object created.
  - Properties applied.
  - Event handlers attached.
+
+## Controls
+![](https://4.bp.blogspot.com/-FSsPICI9wb0/TgIqtcQg34I/AAAAAAAAAEo/DBLnAe1CcvQ/s1600/WPF+Class+Hierarchy.PNG)
+
+ - Framework elements are for data, styles.
+ - ContentPresenter
+	 - Placeholder for controls.
+ - Controls
+	 - Controls don't have appearance. They can be stylized, but on their own, they are strictly behavioral.
+	 - Button Controls
+		 - Button
+			 - Click event fires after mouse button release.
+		 - Repeat Button
+			 - Fires on button down, for as long as its held down; it repeats.
+		 - Toggle Button
+			 - Check
+			 - Radio
+	 - Headered Content Control
+		 - Expander
+			 - Expands and collapses content.
+			 - Toggled.
+				 - isExpanded?
+		 - GroupBox
+			 - Visual, boxed grouping.
+	 - Range Controls
+		 - Slider
+		 - ProgressBar
+			 - Value set internally, via code.
+		 - ScrollBar
+	 - Items Controls
+		 - ***ComboBox***
+			 - A drop down list of items.
+			 - *ItemsSource*
+				 - Property that populates list using items from a specified source.
+			 - We can explicitly add items to the combo box or dynamically using a source.
+				 - Example
+					 - Given explicit dates, we can use the property DisplayMemberPath and value "DayOfWeek" to replace dates with the appropriate day of the week for those dates.
+				 - Items can be associated with different values.
+					 - In the above example, selecting the date could yield a day of the week value.
+			 - IsEditable and IsReadOnly can be enabled to allow searching. You don't want one without the other else search entries may create additional list items.
+			 - You can make searching more granular by also using TextSearch.Text to assign explicit search values to items. e.g. Martin could be Uncle Bob's first name.
+		 - ListBox
+			 - A list of items with a scroll bar.
+		 - TabControl
+			 - Multiple tabs.
+		 - TreeView
+			 - Expand/Collapse
+		 - Selectors
+			 - Selectors allow selection of indexed items.
+				 - Item, Index, Value, ValuePath.
+		 - Images
+		 - Menus
+			 - DockPanel -> StatusBar and StackPanel -> Menu -> Menu Item
+ - Shapes
+ - Panels
+	 - Canvases, grids, and other organizational elements.
+
+## Layout
+
+## Properties and Events
+
+## Data Binding
+
+## Resources
+
+## Styles, Triggers, Templates, Skins
+
+## User Controls and Custom Controls
+
+## WPF Application Model
